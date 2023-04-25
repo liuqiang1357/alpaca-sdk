@@ -1,0 +1,173 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IPancakeMasterChef",
+  "sourceName": "contracts/6/protocol/interfaces/IPancakeMasterChef.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "cake",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_pid",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "enterStaking",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "leaveStaking",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_pid",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        }
+      ],
+      "name": "pendingCake",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "poolInfo",
+      "outputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "lpToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "allocPoint",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "lastRewardBlock",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "accCakePerShare",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "userInfo",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rewardDebt",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_pid",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5061025f806100206000396000f3fe608060405234801561001057600080fd5b50600436106100785760003560e01c80631058d2811461007d5780631175a1dd1461009c5780631526fe27146100da57806341441d3b1461007d578063441a3e701461012757806393f1a40b1461014a578063dce174841461018f578063e2bbb15814610127575b600080fd5b61009a6004803603602081101561009357600080fd5b50356101b3565b005b6100c8600480360360408110156100b257600080fd5b50803590602001356001600160a01b03166101b6565b60408051918252519081900360200190f35b6100f7600480360360208110156100f057600080fd5b50356101be565b604080516001600160a01b0390951685526020850193909352838301919091526060830152519081900360800190f35b61009a6004803603604081101561013d57600080fd5b50803590602001356101f2565b6101766004803603604081101561016057600080fd5b50803590602001356001600160a01b03166101f6565b6040805192835260208301919091528051918290030190f35b61019761021a565b604080516001600160a01b039092168252519081900360200190f35b50565b600092915050565b600160208190526000918252604090912080549181015460028201546003909201546001600160a01b039093169290919084565b5050565b60026020908152600092835260408084209091529082529020805460019091015482565b6000546001600160a01b03168156fea2646970667358221220f7e9a727c99d2f4c75df84dc0cee2a986504d5a1f8999384bd6db4a2e4ac4f7564736f6c63430006060033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100785760003560e01c80631058d2811461007d5780631175a1dd1461009c5780631526fe27146100da57806341441d3b1461007d578063441a3e701461012757806393f1a40b1461014a578063dce174841461018f578063e2bbb15814610127575b600080fd5b61009a6004803603602081101561009357600080fd5b50356101b3565b005b6100c8600480360360408110156100b257600080fd5b50803590602001356001600160a01b03166101b6565b60408051918252519081900360200190f35b6100f7600480360360208110156100f057600080fd5b50356101be565b604080516001600160a01b0390951685526020850193909352838301919091526060830152519081900360800190f35b61009a6004803603604081101561013d57600080fd5b50803590602001356101f2565b6101766004803603604081101561016057600080fd5b50803590602001356001600160a01b03166101f6565b6040805192835260208301919091528051918290030190f35b61019761021a565b604080516001600160a01b039092168252519081900360200190f35b50565b600092915050565b600160208190526000918252604090912080549181015460028201546003909201546001600160a01b039093169290919084565b5050565b60026020908152600092835260408084209091529082529020805460019091015482565b6000546001600160a01b03168156fea2646970667358221220f7e9a727c99d2f4c75df84dc0cee2a986504d5a1f8999384bd6db4a2e4ac4f7564736f6c63430006060033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

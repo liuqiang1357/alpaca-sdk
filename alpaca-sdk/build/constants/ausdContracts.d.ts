@@ -1,0 +1,17 @@
+export declare const IbBUSDCollateralPoolAdapterAddress: string;
+export declare const IbUSDTCollateralPoolAdapterAddress: string;
+export declare const IbWBNBCollateralPoolAdapterAddress: string;
+export declare const BUSDStableCollateralPoolAdapterAddress: string;
+export declare const CollateralPoolConfigAddress: string;
+export declare const AlpacaStablecoinProxyActionsAddress: string;
+export declare const ProxyWalletRegistryAddress: string;
+export declare const ProxyWalletFactoryAddress: string;
+export declare const BookKeeperAddress: string;
+export declare const AUSDAddress: string;
+export declare const PositionManagerAddress: string;
+export declare const StablecoinAdapterAddress: string;
+export declare const StabilityFeeCollectorAddress: string;
+export declare const StableSwapModuleAddress: string;
+export declare const GetPositionsAddress: string;
+export declare const SCPriceOracleAddress: string;
+export declare const FixedSpreadLiquidationStategy: string;

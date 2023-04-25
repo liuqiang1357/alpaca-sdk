@@ -1,0 +1,7 @@
+{
+    "PancakeSwapV2PairHash": "0xbbd07ddacbdac2fbe6b83958ad5d01f890c8920785dd12080fd86de2c504b489",
+    "PancakeSwapV1PairHash": "0xe07001fc6162260c9fac77ed78b83637a1a47b3a6c10ae70bcc96d1c3459eab2",
+    "WaultSwapPairHash": "0x37ea39328eee6251ad565ee74a72be01aed25f29b8c272d01be0cdfa361e75ed",
+    "MdexSwapPairHash": "0x73228bf8f0b1407cc657387301916c549bd0d44c8df09bbf0b96fbe52e0ff646",
+    "ApeSwapPairHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+}

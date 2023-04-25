@@ -1,0 +1,68 @@
+import { getTokenPrice } from '../utils/fiatPrice';
+import { IbDebtTokenALPACAPoolId, IbDebtTokenBNBPoolId, IbDebtTokenBUSDPoolId, IbDebtTokenBTCBPoolId, IbDebtTokenETHPoolId, IbDebtTokenUSDTPoolId, IbDebtTokenTUSDPoolId, IbDebtTokenUSDCPoolId, } from './pools';
+export const alpacaFarmingRewardPools = [
+    {
+        key: 'debt-alpaca',
+        name: 'ALPACA',
+        icon: 'https://alpaca-app-assets.alpacafinance.org/icons/coins/alpaca.svg',
+        poolId: IbDebtTokenALPACAPoolId,
+        rewardUnit: 'ALPACA',
+        getPriceInUSD: () => getTokenPrice('alpaca-finance'),
+    },
+    {
+        key: 'debt-bnb',
+        name: 'BNB',
+        icon: 'https://alpaca-app-assets.alpacafinance.org/icons/coins/bnb.svg',
+        poolId: IbDebtTokenBNBPoolId,
+        rewardUnit: 'ALPACA',
+        getPriceInUSD: () => getTokenPrice('wbnb'),
+    },
+    {
+        key: 'debt-busd',
+        name: 'BUSD',
+        icon: 'https://alpaca-app-assets.alpacafinance.org/icons/coins/busd.svg',
+        poolId: IbDebtTokenBUSDPoolId,
+        rewardUnit: 'ALPACA',
+        getPriceInUSD: () => getTokenPrice('binance-usd'),
+    },
+    {
+        key: 'debt-usdt',
+        name: 'USDT',
+        icon: 'https://alpaca-app-assets.alpacafinance.org/icons/coins/usdt.svg',
+        poolId: IbDebtTokenUSDTPoolId,
+        rewardUnit: 'ALPACA',
+        getPriceInUSD: () => getTokenPrice('tether'),
+    },
+    {
+        key: 'debt-usdc',
+        name: 'USDC',
+        icon: 'https://alpaca-app-assets.alpacafinance.org/icons/coins/usdc.svg',
+        poolId: IbDebtTokenUSDCPoolId,
+        rewardUnit: 'ALPACA',
+        getPriceInUSD: () => getTokenPrice('usd-coin'),
+    },
+    {
+        key: 'debt-tusd',
+        name: 'TUSD',
+        icon: 'https://alpaca-app-assets.alpacafinance.org/icons/coins/tusd.svg',
+        poolId: IbDebtTokenTUSDPoolId,
+        rewardUnit: 'ALPACA',
+        getPriceInUSD: () => getTokenPrice('true-usd'),
+    },
+    {
+        key: 'debt-btcb',
+        name: 'BTCB',
+        icon: 'https://alpaca-app-assets.alpacafinance.org/icons/coins/btcb.svg',
+        poolId: IbDebtTokenBTCBPoolId,
+        rewardUnit: 'ALPACA',
+        getPriceInUSD: () => getTokenPrice('bitcoin-bep2'),
+    },
+    {
+        key: 'debt-eth',
+        name: 'ETH',
+        icon: 'https://alpaca-app-assets.alpacafinance.org/icons/coins/eth.svg',
+        poolId: IbDebtTokenETHPoolId,
+        rewardUnit: 'ALPACA',
+        getPriceInUSD: () => getTokenPrice('ethereum'),
+    },
+];

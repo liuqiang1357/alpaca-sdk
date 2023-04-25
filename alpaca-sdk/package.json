@@ -1,0 +1,55 @@
+{
+  "name": "@alpaca-finance/alpaca-sdk",
+  "version": "0.0.7-beta",
+  "repository": "git@github.com:alpaca-finance/alpaca-internal-sdk.git",
+  "author": "Almost Llamas <kim.tony.20.20.20@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn run build:esm && yarn run build:cjs",
+    "build:esm": "rimraf ./build && tsc -p tsconfig.json",
+    "build:cjs": "rimraf ./build-cjs && tsc -p tsconfig.cjs.json",
+    "_postinstall": "./husky-install.sh",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable",
+    "test": "yarn run test:mainnet",
+    "test:mainnet": "ENV=prod && yarn run jest",
+    "test:testnet": "ENV=testnet && yarn run jest"
+  },
+  "dependencies": {
+    "@alpaca-finance/alpaca-contract": "1.2.23",
+    "@alpaca-finance/alpaca-stablecoin": "1.0.1",
+    "@alpaca-finance/pancakeswap-sdk": "^1.1.3",
+    "@alpaca-finance/xalpaca-contract": "0.0.4",
+    "@latteswap/latteswap-contract": "1.3.2-rc.0",
+    "axios": "^0.21.1",
+    "detect-browser": "^5.2.0",
+    "ethers": "^5.4.1",
+    "lodash.chunk": "^4.2.0",
+    "lodash.flatten": "^4.4.0",
+    "lodash.range": "^3.2.0",
+    "luxon": "^2.0.1",
+    "node-fetch": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "@types/lodash.chunk": "^4.2.6",
+    "@types/lodash.flatten": "^4.4.6",
+    "@types/lodash.range": "^3.2.6",
+    "@types/luxon": "^1.27.1",
+    "@types/node": "^16.4.0",
+    "husky": "^7.0.1",
+    "jest": "^27.4.7",
+    "pinst": "^2.1.6",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.1.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  },
+  "files": [
+    "build",
+    "build-cjs"
+  ],
+  "engines": {
+    "node": ">=12"
+  }
+}

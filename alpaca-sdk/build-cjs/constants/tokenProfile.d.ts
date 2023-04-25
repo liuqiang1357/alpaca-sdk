@@ -1,0 +1,10 @@
+import { ITokenProfiles, ITokenProfile, IMapTokenProfiles } from '../entity';
+import { ILpTokenProfile, ILpTokenProfiles, IMapAddressTokenProfiles, IMapDexLpTokenProfiles } from '../entity';
+export declare const tokenProfiles: Readonly<ITokenProfiles>;
+export declare const mapTokenProfiles: IMapTokenProfiles;
+export declare const mapAddressTokenProfiles: IMapAddressTokenProfiles;
+export declare const lpTokenProfiles: Readonly<ILpTokenProfiles>;
+export declare const mapLpTokenProfiles: IMapDexLpTokenProfiles;
+export declare function getLpTokenAddress(lpToken: ILpTokenProfile): string;
+export declare function getTokenAddress(token: ILpTokenProfile | ITokenProfile): string;
+export declare function getDisplaySymbol(token: ILpTokenProfile | ITokenProfile): string;

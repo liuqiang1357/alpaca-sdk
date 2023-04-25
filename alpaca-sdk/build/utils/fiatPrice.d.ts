@@ -1,0 +1,10 @@
+import { BigNumber } from '@ethersproject/bignumber';
+import { IGetPricesData } from '../common/interfaces';
+export declare function getToken(tokenSlug: string): Promise<IGetPricesData>;
+export declare function getTokens(tokenSlugs: string[]): Promise<IGetPricesData[]>;
+export declare function cacheTokens(tokenSlugs: string[]): Promise<void>;
+export declare function getTokenPrice(tokenSlug: string): Promise<BigNumber>;
+export declare function getNativeTokenPrice(): Promise<BigNumber>;
+export declare function getAlpacaPrice(): Promise<BigNumber>;
+export declare function getBUSDPrice(): Promise<BigNumber>;
+export declare function getZero(): Promise<BigNumber>;
